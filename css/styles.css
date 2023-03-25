@@ -113,6 +113,7 @@ body {
 /* main-menu */
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   font-weight: 500;
   font-size: 16px;
