@@ -13,18 +13,79 @@
   --color-btn-filter-active: #FFFFFF;
   --color-btn-filter-bg-active:  #404BBF;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block; 
+  max-width: 100%; 
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #FFFFFF;
 }
+.container { 
+  max-width: 1128px;
+  margin: 0 auto; }
 .link{
   text-decoration: none;
 }
 .list{
   list-style: none;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* ========header========= */
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.header-container a{
+  padding: 24px 0;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-logo{
+  margin-right: 76px;
+}
 .navigation-item {
   color: var(--color-title);
 }
@@ -48,7 +109,8 @@ body {
 }
 /* main-menu */
 .main-menu {
-  list-style: none;
+  display: flex;
+  gap: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -70,6 +132,11 @@ address{
   list-style: none;
   color: var(--color-text);
 }
+.header-contacts{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 .contacts a {
   text-decoration: none;
   color: inherit;
@@ -86,15 +153,23 @@ address{
 .title-section{
   background-color: #2e2f42;
 }
+.title-section-block{
+  padding: 188px 0;
+}
+.title-section-item{
+  margin: 0 auto;
+}
 .main-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  width: 30%;
+  max-width: 496px;
   color: #ffffff;
+  padding-bottom: 48px;
 }
 .btn-ord-serv {
+  display: block;
   width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -106,7 +181,6 @@ address{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
 }
@@ -118,9 +192,19 @@ address{
 }
 
 /* advantages */
-
-.advantages > h2 {
-  display: none;
+.advantages-box{
+  padding: 120px 0;
+}
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 24px;
+}
+.advantages-item{
+  max-width: 264px;
+  min-height: 100px;
 }
 .advantages > ul {
   list-style: none;
@@ -132,6 +216,7 @@ address{
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-title);
+  padding-bottom: 8px;
 }
 .advantages p {
   font-style: normal;
@@ -141,6 +226,16 @@ address{
   color: var(--color-text);
 }
 /* "What are we doing" */
+.products-box{
+  padding-bottom: 120px;
+}
+.products-list{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 24px;
+}
+
 .products h2 {
   font-size: 36px;
   line-height: 1.11;
@@ -148,6 +243,7 @@ address{
   text-transform: capitalize;
   color: var(--color-title);
   text-align: center;
+  padding-bottom: 72px;
 }
 .products > ul {
   list-style: none;
@@ -155,6 +251,9 @@ address{
 /* Our Team */
 .team{
   background-color: #F4F4FD
+}
+.team-box{
+  padding: 120px 0;
 }
 .team > h2 {
   font-size: 36px;
@@ -165,9 +264,17 @@ address{
 }
 .team-title{
   text-align: center;
+  padding-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   list-style: none;
+  gap: 24px;
+}
+.team-list-item-descr{
+  padding: 32px 16px;
 }
 .team-list li {
   align-items: center;
@@ -253,14 +360,19 @@ color: var(--color-text);
 footer {
   background-color: var(--color-footer-bg);
 }
+.footer-box{
+  padding: 100px;
+}
 .footer-logo {
+  display: block;
   color: #4d5ae5;
+  padding-bottom: 16px;
 }
 .logo-selected-footer{
   color: #f4f4fd;
 }
 .description {
-  width: 264px;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
