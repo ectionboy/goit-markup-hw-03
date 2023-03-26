@@ -57,7 +57,6 @@ body {
 }
 .list {
   list-style: none;
-  padding: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -75,8 +74,8 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  padding: 0 15px;
 
-  flex-wrap: wrap;
 }
 .header-container a {
   padding: 24px 0;
@@ -124,9 +123,7 @@ body {
   text-decoration: none;
 }
 /* contacts */
-address {
-  font-style: normal;
-}
+
 .contacts {
   font-family: "Roboto";
   font-style: normal;
@@ -156,26 +153,26 @@ address {
 /* title+button */
 .title-section {
   background-color: #2e2f42;
-}
-.title-section-block {
   padding: 188px 0;
+  text-align: center;
 }
+
 .title-section-item {
   margin: 0 auto;
 }
 .main-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   max-width: 496px;
   color: #ffffff;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .btn-ord-serv {
   display: block;
-  width: 169px;
-  height: 56px;
+  min-width: 169px;
+  padding: 16px 32px;
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -196,19 +193,15 @@ address {
 }
 
 /* advantages */
-.advantages-box {
+.advantages {
   padding: 120px 0;
 }
 .advantages-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-around;
   gap: 24px;
 }
 .advantages-item {
   max-width: 264px;
-  min-height: 100px;
 }
 .advantages > ul {
   list-style: none;
@@ -220,7 +213,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-title);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages p {
   font-style: normal;
@@ -230,13 +223,11 @@ address {
   color: var(--color-text);
 }
 /* "What are we doing" */
-.products-box {
+.products {
   padding-bottom: 120px;
 }
 .products-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   gap: 24px;
 }
 
@@ -247,7 +238,7 @@ address {
   text-transform: capitalize;
   color: var(--color-title);
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .products > ul {
   list-style: none;
@@ -255,26 +246,23 @@ address {
 /* Our Team */
 .team {
   background-color: #f4f4fd;
-}
-.team-box {
   padding: 120px 0;
 }
-.team > h2 {
+
+
+.team-title {
+  text-align: center;
+  padding-bottom: 72px;
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-title);
 }
-.team-title {
-  text-align: center;
-  padding-bottom: 72px;
-}
 .team-list {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  list-style: none;
   gap: 24px;
 }
 .team-list-item-descr {
@@ -282,9 +270,7 @@ address {
 }
 .team-list li {
   align-items: center;
-  padding: 0px 0px 32px;
   width: 264px;
-  height: 380px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background: #ffffff;
@@ -296,6 +282,7 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-title);
+  margin-bottom: 8px;
 }
 .team-list-item-p {
   font-size: 16px;
@@ -320,7 +307,6 @@ address {
 }
 .filter-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
@@ -382,10 +368,9 @@ address {
 /* logo style in header but not all*/
 footer {
   background-color: var(--color-footer-bg);
-}
-.footer-box {
   padding: 100px;
 }
+
 .footer-logo {
   display: block;
   color: #4d5ae5;
