@@ -303,6 +303,9 @@ body {
 /* .portfolio-header {
   border-bottom: 1px solid #e7e9fc;
 } */
+.filter{
+  padding: 96px 0 72px 0 ;
+}
 .filter-list {
   display: flex;
   justify-content: center;
